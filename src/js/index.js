@@ -8,7 +8,23 @@ $(".one-time").slick({
   adaptiveHeight: true,
   autoplay: true,
   autoplaySpeed: 3000,
-  centerMode: true
+  centerMode: true,
+  responsive: [
+    {
+        breakpoint: 960,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 3,
+        }
+    },
+    {
+        breakpoint: 680,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 2
+        }
+    }
+]
 });
 
 const commercialLighting = document.querySelector('.commercial_lighting');

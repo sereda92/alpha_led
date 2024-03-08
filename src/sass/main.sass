@@ -48,7 +48,7 @@ p
     height: 5px
     background-color: $color-03989e
     border-radius: 20px
-    margin: 30px 0 
+    margin: 50px 0 
 
 .title
     margin-top: 30px
@@ -119,11 +119,14 @@ p
         font-family: 'Verdana', sans-serif
         font-size: 48px
         font-weight: 600
+        line-height: 1.5
+        max-width: 400px
+        letter-spacing: 7px
 
 
 .about__us_main
     max-width: 700px
-    margin-top: 80px
+    // margin-top: 80px
     p
         font-family: 'Verdana', sans-serif
         font-size: 18px
@@ -152,7 +155,7 @@ p
 
 .commercial_lighting
     padding: 100px 0px 50px 0px
-    background-color: #EFEFEF
+    background-color: $color-EFEFEF
     transition: all .8s ease
 
 .active_scroll
@@ -203,13 +206,44 @@ p
 //     border-radius: 50%
 
 
-.track_systems_title
-    height: 2000px
 
 .commercial_lighting_wrap
     padding: 0 25px
 
 
+
+.track_systems
+    position: relative
+    padding: 120px 25px 150px 25px
+    overflow: hidden
+
+.track_systems_img
+    width: 400px
+    height: 300px
+    position: absolute
+    top: 25px
+    right: 25px
+    img
+        width: 100%
+        opacity: .5
+.track_systems_main
+    p
+        max-width: 700px
+
+.track_systems_circle
+    position: absolute
+    bottom: -50px
+    left: 0
+    transform: rotate(-90deg)
+// -----------------------
+
+.practic_wrap
+    background-color: $color-EFEFEF
+    position: relative
+    padding: 120px 25px 150px 25px
+
+.practic_title
+    max-width: 400px
 
 @import './_footer'
 @import './_media'
