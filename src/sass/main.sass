@@ -40,6 +40,7 @@ p
 .__container
     max-width: 1200px
     margin: 0 auto
+    padding: 0 25px
 
 .line
     display: inline-block
@@ -94,6 +95,7 @@ p
         width: 100%
         height: 100%
         opacity: .3
+        transition: all .4s easse
 .about__us_img
     &::before
         content: ''
@@ -149,8 +151,13 @@ p
 
 
 .commercial_lighting
-    padding: 100px 25px 50px 25px
+    padding: 100px 0px 50px 0px
     background-color: #EFEFEF
+    transition: all .8s ease
+
+.active_scroll
+    color: #fff
+    background-color: #3e3e3e
 
 .commercial_lighting_main
     display: inline-block
@@ -163,6 +170,13 @@ p
     display: block
     width: 33.33%
     height: 500px 
+    background-color: #000
+    img
+        opacity: .3
+
+.slick-current
+    img
+        opacity: 1
 .slick-track
     display: flex
     gap: 10px
@@ -178,6 +192,23 @@ p
         width: 100%
         height: 100%
         object-fit: cover
+
+.one-time
+    margin-top: 25px
+// .slick-prev,
+// .slick-next
+//     background-color: $color-03989e
+//     width: 30px
+//     height: 30px
+//     border-radius: 50%
+
+
+.track_systems_title
+    height: 2000px
+
+.commercial_lighting_wrap
+    padding: 0 25px
+
 
 
 @import './_footer'
